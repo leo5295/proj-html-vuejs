@@ -4,16 +4,16 @@ export default {
 }
 </script>
 <template lang="">
-    <div class="container-fluid bg align-items-center d-flex justify-content-center">
+    <div class="container-fluid bg paw">
         <div class="row">
-            <div class="col">
-                <span class="text-center">International Shipping Services</span>
+            <div class="col-4 text-center">
+                <span class="text-center"><span><i class="fa-regular fa-map"></i></span> International Shipping Services</span>
             </div>
-            <div class="col">
-                <span class="text-center">See our store hours and services</span>
+            <div class="col-4 text-center">
+                <span class="text-center"><span><i class="fa-regular fa-clock"></i></span> See our store hours and services</span>
             </div>
-            <div class="col">
-                <span class="text-center">We price match to give you the best deals</span>
+            <div class="col-4 text-center">
+                <span class="text-center"><span><i class="fa-solid fa-check"></i></span> We price match to give you the best deals</span>
             </div>
 
         </div>
@@ -27,6 +27,15 @@ export default {
 
 img {
     width: 100%;
+}
+
+.paw {
+    background: url("../assets/img/bg-transparent-3.png");
+    background: cover;
+}
+
+.container-fluid {
+    padding-top: 15px;
 }
 
 .bg {
