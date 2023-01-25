@@ -58,15 +58,15 @@ export default {
                 item.active = i === index;
             });
         },
-        handleScroll() {
-            this.scroll = window.scrollY;
-        },
-        mounted() {
-            window.addEventListener("scroll", this.handleScroll);
-        },
-        beforeUnmount() {
-            window.removeEventListener('scroll', this.handleScroll);
-        }
+        // handleScroll() {
+        //     this.scroll = window.scrollY;
+        // },
+        // mounted() {
+        //     window.addEventListener("scroll", this.handleScroll);
+        // },
+        // beforeUnmount() {
+        //     window.removeEventListener('scroll', this.handleScroll);
+        // }
     }
 
 }
@@ -74,7 +74,7 @@ export default {
 
 
 <template lang="">
-  <header  :class="(this.scroll > 70 && this.scroll < 400) ? 'fixed' : ''">
+  <header>
     <nav>
       <!-- <ul>
         <li v-for="(item, index) in menu" :key="index" :class="item.active ? 'active' : ''" @click="setActive(index)">
